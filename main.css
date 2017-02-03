@@ -1,0 +1,21 @@
+span.left-nav {
+	float: left;
+}
+
+span.right-nav {
+	float: right;
+}
+
+header img {
+	width: 50px;
+	height: 100%;
+}
+
+.footer img {
+	max-width: 100%;
+}
+
+.footer {
+position: absolute; bottom: 0;
+
+}
