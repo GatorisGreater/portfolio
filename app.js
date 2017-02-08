@@ -1,7 +1,6 @@
 const SEARCH_URL = 'https://cors.now.sh/http://quotes.stormconsultancy.co.uk/random.json';
 // const SEARCH_URL = 'http://quotes.stormconsultancy.co.uk/random.json';
 
-
 // Initial State Object
 const state = {
 	projects: [{
@@ -9,8 +8,8 @@ const state = {
 		projectDescription: "User plays a Simpsons trivia game. The user gets a chance to answer 5 questions and receive right or wrong feedback on each selection. The user cannot skip a question without answering. After the 5th question the user receives their final score and the option to start the quiz over.",
 		projectStack: ["HTML", "CSS", "JavaScript", "jQuery", "Basic State Management Principles"],
 		projectScreenShot: "",
-		projectCodeLink: "",
-		projectDemoLink: "",
+		projectCodeLink: "https://github.com/GatorisGreater/Quiz-App",
+		projectDemoLink: "https://gatorisgreater.github.io/Quiz-App/",
 		projectImprovements: "Refactoring to ES6 syntax"
 	},
 	{
@@ -34,27 +33,53 @@ const state = {
 	]
 }
 
+let quote;
+let author;
+
 //State Manipulation Functions
 
 //Render Functions
-// function renderProject(state, index) {
-// 	let stackArray = state.projects[index].projectStack.map(tool => {
-// 		return <li> {tool} </li>
-// 	});
-// 	$('.body-projectdetails p').html(state.projects[index].projectTitle);
-// 	$('.body-projectdetails ul').html(stackArray);
-// }
+
+	function renderQuoteLanding(quote, author) {
+	$('.quote').html(quote);
+	$('.author').html(author);
+	}
+
+	function renderProject(state, index) {
+		let stackArray = state.projects[index].projectStack.map(tool => {
+			return '<li>' + tool + '</li>';
+		});
+		console.log(state.projects[index].projectCodeLink);
+		console.log(state.projects[index].projectDemoLink);
+		$('.landing').addClass("hidden");
+		$('.body').removeClass("hidden");
+		$('.body-details p').html(state.projects[index].projectTitle);
+		$('#code a').prop("href", "state.projects[index].projectCodeLink");
+		$('#demo').html(state.projects[index].projectDemoLink);
+		$('.body-details ul').html(stackArray);
+	}
 
 //AJAX Logic
 
 const quoteGenerator = (callback) => $.getJSON(SEARCH_URL, callback);
 
 function callback(response) {
-	console.log(Object.keys(response));
-	console.log(response.quote);
-	console.log(response.author);
+	quote = response.quote;
+	author = response.author;
+	renderQuoteLanding(quote, author);
 }
 
-quoteGenerator(callback);
 
 //Event Handlers
+
+$('#quiz-app').click(function(event){
+                event.preventDefault();
+                renderProject(state, 0);
+});
+
+$('#weather-challenge').click(function(event){
+                event.preventDefault();
+                renderProject(state, 1);
+});
+
+$(document).ready(quoteGenerator(callback));

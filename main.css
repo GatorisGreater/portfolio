@@ -1,3 +1,11 @@
+html {
+	font-family: "Lucida Console", Monaco, monospace;
+}
+
+.hidden {
+	display: none;
+}
+
 span.left-nav {
 	float: left;
 }
@@ -10,3 +18,14 @@ header img {
 	width: 50px;
 	height: 100%;
 }
+
+.landing {
+	text-align: center;
+}
+
+/*.body {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}*/
