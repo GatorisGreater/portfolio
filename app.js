@@ -31,7 +31,7 @@ const state = {
 		projectImprovements: "Refactoring to ES6 syntax"
 	},
 	],
-	personalStory: "I spent the first 10 years of my career at one company. I rode the lifecycle wave up as consumers flocked to our product and rode the wave back down as preferences changed. The consumers of tomorrow are tech savvy and companies need to develop technical innovations to meet those needs. I want to be a part of the solution. Thanks for taking a look.   - Will"
+	personalStory: "I spent the first 10 years of my career at one company. I rode up the lifecycle wave as consumers demanded our product and rode back down the wave as preferences changed. The consumers of tomorrow are tech savvy. Successful companies will be those that develop technical innovations to meet increasingly tech oriented needs. I want to help you get there. Thanks for taking a look.   - Will"
 }
 
 let quote;
