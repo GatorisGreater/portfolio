@@ -20,6 +20,16 @@ span.right-nav {
     border-radius: 8px;
 }
 
+.intro p {
+    display: inline; 
+}
+
+.intro p:hover {
+    background-color: gray; 
+    color: white;
+    border-radius: 8px;
+}
+
 header img {
 	width: 50px;
 	height: 100%;

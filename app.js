@@ -30,7 +30,8 @@ const state = {
 		projectDemoLink: "",
 		projectImprovements: "Refactoring to ES6 syntax"
 	},
-	]
+	],
+	personalStory: "I spent the first 10 years of my career at one company. I rode the lifecycle wave up as consumers flocked to our product and rode the wave back down as preferences changed. The consumers of tomorrow are tech savvy and companies need to develop technical innovations to meet those needs. I want to be a part of the solution. Thanks for taking a look.   - Will"
 }
 
 let quote;
@@ -45,6 +46,13 @@ let author;
 	$('.author').html(author);
 	}
 
+	function renderAboutMe(state) {
+	let story = state.personalStory;
+	$('.quote, .author, .col-6').addClass("hidden");
+	$('.landing').removeClass("hidden");
+	$('.my-story').html(story);
+	}
+
 	function renderProject(state, index) {
 		let stackArray = state.projects[index].projectStack.map(tool => {
 			return '<li>' + tool + '</li>';
@@ -52,7 +60,7 @@ let author;
 		console.log(state.projects[index].projectCodeLink);
 		console.log(state.projects[index].projectDemoLink);
 		$('.landing').addClass("hidden");
-		$('.body').removeClass("hidden");
+		$('.body, .col-6').removeClass("hidden");
 		$('.body-details p').html(state.projects[index].projectTitle);
 		$('#code a').prop("href", "state.projects[index].projectCodeLink");
 		$('#demo').html(state.projects[index].projectDemoLink);
@@ -71,6 +79,11 @@ function callback(response) {
 
 
 //Event Handlers
+
+$('#about-me').click(function(event){
+                event.preventDefault();
+                renderAboutMe(state);
+});
 
 $('#quiz-app').click(function(event){
                 event.preventDefault();
