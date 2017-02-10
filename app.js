@@ -31,7 +31,8 @@ const state = {
 		projectImprovements: "Refactoring to ES6 syntax"
 	},
 	],
-	personalStory: "I spent the first 10 years of my career at one company. I rode up the lifecycle wave as consumers demanded our product and rode back down the wave as preferences changed. The consumers of tomorrow are tech savvy. Successful companies are developing technical innovations to meet increasingly tech oriented needs. I want to help you get there. Thanks for taking a look.   - Will"
+	personalStory: "I spent the first 10 years of my career at one company. I rode up the lifecycle wave as consumers demanded our product and rode back down the wave as preferences changed. The consumers of tomorrow are tech savvy. Successful companies are developing technical innovations to meet increasingly tech oriented needs. I want to help you get there. Thanks for taking a look.   - Will",
+	techStack: ["HTML", "CSS", "JavaScript/ECMAScript 2015", "jQuery", "React", "Redux", "Express", "Node.js", "MongoDB", "Mongoose", "PostgreSQL"]
 }
 
 let quote;
@@ -50,7 +51,16 @@ let author;
 	let story = state.personalStory;
 	$('.quote, .author, .col-6').addClass("hidden");
 	$('.landing').removeClass("hidden");
-	$('.my-story').html(story);
+	$('.about-me').html(story);
+	}
+
+	function renderTechStack(state) {
+	let techStackArray = state.techStack.map(tool => {
+		return '<li>' + tool + '</li>';
+	});
+	$('.quote, .author, .col-6').addClass("hidden");
+	$('.landing').removeClass("hidden");
+	$('.about-me ul').html(techStackArray);
 	}
 
 	function renderProject(state, index) {
@@ -79,6 +89,11 @@ function callback(response) {
 
 
 //Event Handlers
+
+$('#about-my-skills').click(function(event){
+                event.preventDefault();
+                renderTechStack(state);
+});
 
 $('#about-me').click(function(event){
                 event.preventDefault();
