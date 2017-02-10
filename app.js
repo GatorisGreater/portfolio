@@ -93,22 +93,22 @@ function youveGotQuotes(response) {
 
 //Event Handlers
 
-$('#about-my-skills').click(function(event){
+$('#about-my-skills').mousedown(function(event){
                 event.preventDefault();
                 renderTechStack();
 });
 
-$('#about-me').click(function(event){
+$('#about-me').mousedown(function(event){
                 event.preventDefault();
                 renderAboutMe();
 });
 
-$('#quiz-app').click(function(event){
+$('#quiz-app').mousedown(function(event){
                 event.preventDefault();
                 renderProject(state, 0);
 });
 
-$('#weather-challenge').click(function(event){
+$('#weather-challenge').mousedown(function(event){
                 event.preventDefault();
                 renderProject(state, 1);
 });
