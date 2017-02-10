@@ -37,6 +37,10 @@ header img {
 	text-align: center;
 }
 
+.landing ul {
+  list-style-type: none;
+}
+
 /*.body {
   position: fixed;
   top: 50%;

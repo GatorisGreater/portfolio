@@ -31,7 +31,7 @@ const state = {
 		projectImprovements: "Refactoring to ES6 syntax"
 	},
 	],
-	personalStory: "I spent the first 10 years of my career at one company. I rode up the lifecycle wave as consumers demanded our product and rode back down the wave as preferences changed. The consumers of tomorrow are tech savvy. Successful companies are developing technical innovations to meet increasingly tech oriented needs. I want to help you get there. Thanks for taking a look.   - Will",
+	personalStory: "I spent the first 10 years of my career at one company. I rode up the lifecycle wave as our product was in demand and rode back down the wave as preferences changed. The consumers of tomorrow are tech savvy. The companies of tomorrow are developing innovations that meet increasingly tech oriented needs. I want to help you get there. Thanks for taking a look.   - Will",
 	techStack: ["HTML", "CSS", "JavaScript/ECMAScript 2015", "jQuery", "React", "Redux", "Express", "Node.js", "MongoDB", "Mongoose", "PostgreSQL"]
 }
 
