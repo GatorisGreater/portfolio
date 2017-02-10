@@ -37,12 +37,14 @@ const state = {
 
 let quote;
 let author;
-let story = state.personalStory;
-let techStackArray = state.techStack.map(tool => {
-	return '<li>' + tool + '</li>';
-});
 
 //State Manipulation Functions
+
+		let story = state.personalStory;
+
+		let techStackArray = state.techStack.map(tool => {
+			return '<li>' + tool + '</li>';
+		});
 
 //Render Functions
 
