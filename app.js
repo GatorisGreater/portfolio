@@ -8,7 +8,7 @@ const state = {
 		projectDescription: "User plays a Simpsons trivia game. The user gets a chance to answer 5 questions and receive right or wrong feedback on each selection. The user cannot skip a question without answering. After the 5th question the user receives their final score and the option to start the quiz over.",
 		projectStack: ["HTML", "CSS", "JavaScript", "jQuery", "Basic State Management Principles"],
 		projectScreenShot: "",
-		projectCodeLink: "https://github.com/GatorisGreater/Quiz-App",
+		projectCodeLink: "https://github.com/GatorisGreater/Quiz-App", 
 		projectDemoLink: "https://gatorisgreater.github.io/Quiz-App/",
 		projectImprovements: "Refactoring to ES6 syntax"
 	},
@@ -18,7 +18,7 @@ const state = {
 		projectStack: ["HTML", "CSS", "Mobile Viewing`/Responsive Grid`", "JavaScript", "jQuery", "RESTful API communication", "Basic State Management Principles"],
 		projectScreenShot: "",
 		projectCodeLink: "",
-		projectDemoLink: "",
+		projectDemoLink: "https://gatorisgreater.github.io/weather-challenge-app/",
 		projectImprovements: "Refactoring to ES6 syntax"
 	},
 	{
@@ -31,8 +31,8 @@ const state = {
 		projectImprovements: "Refactoring to ES6 syntax"
 	},
 	],
-	personalStory: "I spent the first 10 years of my career at one company. I rode up the lifecycle wave as our product was in demand and rode back down the wave as preferences changed. The consumers of tomorrow are tech savvy. The companies of tomorrow are developing innovations that meet increasingly tech oriented needs. I want to help you get there. Thanks for taking a look.   - Will",
-	techStack: ["HTML", "CSS", "JavaScript/ECMAScript 2015", "jQuery", "React", "Redux", "Express", "Node.js", "MongoDB", "Mongoose", "PostgreSQL"]
+	personalStory: "I spent the first 10 years of my career at one company. I rode up the lifecycle wave as our product was in demand and rode back down the wave as preferences changed. The consumers of tomorrow are tech savvy. The companies of tomorrow are developing innovations to meet increasingly tech oriented needs. I want to help you get there. Thanks for taking a look.   - Will",
+	techStack: ["HTML", "CSS", "JavaScript/ECMAScript 2015", "jQuery", "React", "Redux", "Express", "Node.js", "MongoDB", "Mongoose", "PostgreSQL", "--", "Husband", "Son", "Brother", "Friend"]
 }
 
 let quote;
