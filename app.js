@@ -73,9 +73,10 @@ let author;
 		console.log(state.projects[index].projectDemoLink);
 		$('.landing').addClass("hidden");
 		$('.body, .col-6').removeClass("hidden");
-		$('.body-details p').html(state.projects[index].projectTitle);
+		$('.body-details .project-name').html(state.projects[index].projectTitle);
 		$('#code a').prop("href", "state.projects[index].projectCodeLink");
 		$('#demo').html(state.projects[index].projectDemoLink);
+		$('.body-details .project-description').html(state.projects[index].projectDescription);
 		$('.body-details ul').html(stackArray);
 	}
 
