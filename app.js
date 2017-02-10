@@ -54,14 +54,14 @@ let author;
 	}
 
 	function renderAboutMe() {
-	$('.quote, .author, .col-6').addClass("hidden");
-	$('.landing').removeClass("hidden");
+	$('.quote, .author, .about-my-skills, .col-6').addClass("hidden");
+	$('.landing, .about-me').removeClass("hidden");
 	$('.about-me').html(story);
 	}
 
 	function renderTechStack() {
-	$('.quote, .author, .col-6').addClass("hidden");
-	$('.landing').removeClass("hidden");
+	$('.quote, .author, .about-me, .col-6').addClass("hidden");
+	$('.landing, .about-my-skills').removeClass("hidden");
 	$('.about-my-skills').html(techStackArray);
 	}
 
