@@ -82,7 +82,7 @@ let author;
 
 //AJAX Logic
 
-const quoteGenerator = (callback) => $.getJSON(SEARCH_URL, callback);
+const quoteGenerator = () => $.getJSON(SEARCH_URL, youveGotQuotes);
 
 function youveGotQuotes(response) {
 	quote = response.quote;
@@ -113,4 +113,4 @@ $('#weather-challenge').click(function(event){
                 renderProject(state, 1);
 });
 
-$(document).ready(quoteGenerator(youveGotQuotes));
+$(document).ready(quoteGenerator());
