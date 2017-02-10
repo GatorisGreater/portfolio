@@ -37,30 +37,30 @@ const state = {
 
 let quote;
 let author;
+let story = state.personalStory;
+let techStackArray = state.techStack.map(tool => {
+	return '<li>' + tool + '</li>';
+});
 
 //State Manipulation Functions
 
 //Render Functions
 
-	function renderQuoteLanding(quote, author) {
+	function renderQuoteLanding() {
 	$('.quote').html(quote);
 	$('.author').html(author);
 	}
 
-	function renderAboutMe(state) {
-	let story = state.personalStory;
+	function renderAboutMe() {
 	$('.quote, .author, .col-6').addClass("hidden");
 	$('.landing').removeClass("hidden");
 	$('.about-me').html(story);
 	}
 
-	function renderTechStack(state) {
-	let techStackArray = state.techStack.map(tool => {
-		return '<li>' + tool + '</li>';
-	});
+	function renderTechStack() {
 	$('.quote, .author, .col-6').addClass("hidden");
 	$('.landing').removeClass("hidden");
-	$('.about-me ul').html(techStackArray);
+	$('.about-my-skills').html(techStackArray);
 	}
 
 	function renderProject(state, index) {
@@ -92,12 +92,12 @@ function callback(response) {
 
 $('#about-my-skills').click(function(event){
                 event.preventDefault();
-                renderTechStack(state);
+                renderTechStack();
 });
 
 $('#about-me').click(function(event){
                 event.preventDefault();
-                renderAboutMe(state);
+                renderAboutMe();
 });
 
 $('#quiz-app').click(function(event){
