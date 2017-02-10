@@ -84,7 +84,7 @@ let author;
 
 const quoteGenerator = (callback) => $.getJSON(SEARCH_URL, callback);
 
-function callback(response) {
+function youveGotQuotes(response) {
 	quote = response.quote;
 	author = response.author;
 	renderQuoteLanding(quote, author);
@@ -113,4 +113,4 @@ $('#weather-challenge').click(function(event){
                 renderProject(state, 1);
 });
 
-$(document).ready(quoteGenerator(callback));
+$(document).ready(quoteGenerator(youveGotQuotes));
