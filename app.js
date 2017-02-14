@@ -27,11 +27,11 @@ const state = {
 		projectStack: ["MongoDB", "Express", "`Node.js`", "`React/Redux`", "HTML", "CSS", "JavaScript", "JSX"],
 		projectScreenShot: "",
 		projectCodeLink: "",
-		projectDemoLink: "",
+		projectDemoLink: "https://bootcamp-bit.herokuapp.com/",
 		projectImprovements: "Refactoring to ES6 syntax"
 	},
 	],
-	personalStory: "I spent the first 10 years of my career at one company. I rode up the lifecycle wave as our product was in demand and rode back down the wave as preferences changed. The consumers of tomorrow are tech savvy. The companies of tomorrow are developing innovations to meet increasingly tech oriented needs. I want to help you get there. Thanks for taking a look.   - Will",
+	personalStory: "I spent the first 10 years of my career at one company. I rode up the lifecycle wave as our product was in demand and rode back down the wave as preferences changed. The consumers of tomorrow are tech savvy. The companies of tomorrow are developing solutions to meet increasingly tech oriented problems. I want to help you get there. Thanks for taking a look.   - Will",
 	techStack: ["HTML", "CSS", "JavaScript/ECMAScript 2015", "jQuery", "React", "Redux", "Express", "Node.js", "MongoDB", "Mongoose", "PostgreSQL", "--", "Husband", "Son", "Brother", "Friend"]
 }
 
@@ -98,17 +98,17 @@ $('#about-my-skills').mousedown(function(event){
                 renderTechStack();
 });
 
-$('#about-me').mousedown(function(event){
+$('#about-me').click(function(event){
                 event.preventDefault();
                 renderAboutMe();
 });
 
-$('#quiz-app').mousedown(function(event){
+$('#quiz-app').click(function(event){
                 event.preventDefault();
                 renderProject(state, 0);
 });
 
-$('#weather-challenge').mousedown(function(event){
+$('#weather-challenge').click(function(event){
                 event.preventDefault();
                 renderProject(state, 1);
 });
