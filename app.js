@@ -74,8 +74,8 @@ let author;
 		$('.landing').addClass("hidden");
 		$('.body, .col-6').removeClass("hidden");
 		$('.body-details .project-name').html(state.projects[index].projectTitle);
-		$('.code').html(state.projects[index].projectCodeLink);
-		$('.demo').html(state.projects[index].projectDemoLink);
+		$('.code').attr("href", state.projects[index].projectCodeLink).html(state.projects[index].projectCodeLink);
+		$('.demo').attr("href", state.projects[index].projectDemoLink).html(state.projects[index].projectDemoLink);
 		$('.body-details .project-description').html(state.projects[index].projectDescription);
 		$('.body-details ul').html(stackArray);
 	}
