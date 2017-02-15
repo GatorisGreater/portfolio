@@ -17,7 +17,7 @@ const state = {
 		projectDescription: "User can see which of 2 cities has better weather. User inputs city#1 in the left-hand input box and submits to get basic current weather information about that city. User inputs city#2 in the right-hand input box to get basic current weather information about that city. The user then selects the `{Who Wins?}` button to run a calculation to determine which city has the better weather and the prevailing city is displayed. If the result is a tie, the user is given a feedback message saying it's a tie.",
 		projectStack: ["HTML", "CSS", "Mobile Viewing`/Responsive Grid`", "JavaScript", "jQuery", "RESTful API communication", "Basic State Management Principles"],
 		projectScreenShot: "",
-		projectCodeLink: "",
+		projectCodeLink: "https://github.com/GatorisGreater/weather-challenge-app",
 		projectDemoLink: "https://gatorisgreater.github.io/weather-challenge-app/",
 		projectImprovements: "Refactoring to ES6 syntax"
 	},
