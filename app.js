@@ -106,7 +106,6 @@ $('#about-me').click(function(event){
 $('#quiz-app').click(function(event){
                 event.preventDefault();
                 renderProject(state, 0);
-                $("#code").attr('href', "www.google.com");
 });
 
 $('#weather-challenge').click(function(event){
