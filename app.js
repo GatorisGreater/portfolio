@@ -74,8 +74,8 @@ let author;
 		$('.landing').addClass("hidden");
 		$('.body, .col-6').removeClass("hidden");
 		$('.body-details .project-name').html(state.projects[index].projectTitle);
-		$('#code a').prop("href", "state.projects[index].projectCodeLink");
-		$('#demo').html(state.projects[index].projectDemoLink);
+		$('.code').html(state.projects[index].projectCodeLink);
+		$('.demo').html(state.projects[index].projectDemoLink);
 		$('.body-details .project-description').html(state.projects[index].projectDescription);
 		$('.body-details ul').html(stackArray);
 	}
@@ -93,7 +93,7 @@ function youveGotQuotes(response) {
 
 //Event Handlers
 
-$('#about-my-skills').mousedown(function(event){
+$('#about-my-skills').click(function(event){
                 event.preventDefault();
                 renderTechStack();
 });
@@ -106,6 +106,7 @@ $('#about-me').click(function(event){
 $('#quiz-app').click(function(event){
                 event.preventDefault();
                 renderProject(state, 0);
+                $("#code").attr('href', "www.google.com");
 });
 
 $('#weather-challenge').click(function(event){

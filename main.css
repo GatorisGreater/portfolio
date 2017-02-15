@@ -2,6 +2,12 @@ html {
 	font-family: "Lucida Console", Monaco, monospace;
 }
 
+html, body {
+  margin: 15px;
+  height: 100%;
+  overflow: hidden;
+}
+
 .hidden {
 	display: none;
 }
