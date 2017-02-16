@@ -14,7 +14,7 @@ const state = {
 	},
 	{
 		projectTitle: "Weather Challenge",
-		projectDescription: "User can see which of 2 cities has better weather. User inputs city#1 in the left-hand input box and submits to get basic current weather information about that city. User inputs city#2 in the right-hand input box to get basic current weather information about that city. The user then selects the `{Who Wins?}` button to run a calculation to determine which city has the better weather and the prevailing city is displayed. If the result is a tie, the user is given a feedback message saying it's a tie.",
+		projectDescription: "User can see which of 2 cities has better weather. User inputs city#1 in the left-hand input box and submits to get basic current weather information about that city. User inputs city#2 in the right-hand input box to get basic current weather information about that city. The user then selects the Who Wins? button to run a calculation to determine which city has the better weather and the prevailing city is displayed. If the result is a tie, the user is given a feedback message saying it's a tie.",
 		projectStack: ["HTML", "CSS", "Mobile Viewing`/Responsive Grid`", "JavaScript", "jQuery", "RESTful API communication", "Basic State Management Principles"],
 		projectScreenShot: "",
 		projectCodeLink: "https://github.com/GatorisGreater/weather-challenge-app",
@@ -24,9 +24,9 @@ const state = {
 	{
 		projectTitle: "Repo Tracker",
 		projectDescription: "User can track projects and details. This information is stored in a database for future recall.",
-		projectStack: ["MongoDB", "Express", "`Node.js`", "`React/Redux`", "HTML", "CSS", "JavaScript", "JSX"],
+		projectStack: ["MongoDB", "Express", `Node.js`, `React/Redux`, "HTML", "CSS", "JavaScript", "JSX"],
 		projectScreenShot: "",
-		projectCodeLink: "",
+		projectCodeLink: "https://github.com/GatorisGreater/bootcamp-bit",
 		projectDemoLink: "https://bootcamp-bit.herokuapp.com/",
 		projectImprovements: "Refactoring to ES6 syntax"
 	},
@@ -74,8 +74,8 @@ let author;
 		$('.landing').addClass("hidden");
 		$('.body, .col-6').removeClass("hidden");
 		$('.body-details .project-name').html(state.projects[index].projectTitle);
-		$('.code').attr("href", state.projects[index].projectCodeLink).html(state.projects[index].projectCodeLink);
-		$('.demo').attr("href", state.projects[index].projectDemoLink).html(state.projects[index].projectDemoLink);
+		$('.code').attr("href", state.projects[index].projectCodeLink).html("View Code");
+		$('.demo').attr("href", state.projects[index].projectDemoLink).html("View Demo");
 		$('.body-details .project-description').html(state.projects[index].projectDescription);
 		$('.body-details ul').html(stackArray);
 	}
@@ -111,6 +111,11 @@ $('#quiz-app').click(function(event){
 $('#weather-challenge').click(function(event){
                 event.preventDefault();
                 renderProject(state, 1);
+});
+
+$('#bootcamp-bit').click(function(event){
+                event.preventDefault();
+                renderProject(state, 2);
 });
 
 $(document).ready(quoteGenerator());
