@@ -7,16 +7,16 @@ html, body {
   height: 100%;
 }
 
+p.left-nav {
+  float: left;
+}
+
+p.right-nav {
+  float: right;
+}
+
 .hidden {
 	display: none;
-}
-
-span.left-nav {
-	float: left;
-}
-
-span.right-nav {
-	float: right;
 }
 
 .intro img:hover {
@@ -28,7 +28,12 @@ span.right-nav {
     display: inline; 
 }
 
-.intro p:hover {
+p.name:hover {
+    background-color: gray; 
+    border-radius: 8px;
+}
+
+p.skills:hover {
     background-color: gray; 
     border-radius: 8px;
 }
@@ -45,10 +50,3 @@ header img {
 .landing ul {
   list-style-type: none;
 }
-
-/*.body {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}*/

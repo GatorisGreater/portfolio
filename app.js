@@ -48,29 +48,27 @@ let author;
 
 //Render Functions
 
-	function renderQuoteLanding() {
+	const renderQuoteLanding = () => {
 	$('.quote').html(quote);
 	$('.author').html(author);
 	}
 
-	function renderAboutMe() {
+	const renderAboutMe = () => {
 	$('.quote, .author, .about-my-skills, .col-6').addClass("hidden");
 	$('.landing, .about-me').removeClass("hidden");
 	$('.about-me').html(story);
 	}
 
-	function renderTechStack() {
+	const renderTechStack = () => {
 	$('.quote, .author, .about-me, .col-6').addClass("hidden");
 	$('.landing, .about-my-skills').removeClass("hidden");
 	$('.about-my-skills').html(techStackArray);
 	}
 
-	function renderProject(state, index) {
+	const renderProject = (state, index) => {
 		let stackArray = state.projects[index].projectStack.map(tool => {
 			return '<li>' + tool + '</li>';
 		});
-		console.log(state.projects[index].projectCodeLink);
-		console.log(state.projects[index].projectDemoLink);
 		$('.landing').addClass("hidden");
 		$('.body, .col-6').removeClass("hidden");
 		$('.body-details .project-name').html(state.projects[index].projectTitle);
@@ -82,9 +80,9 @@ let author;
 
 //AJAX Logic
 
-const quoteGenerator = () => $.getJSON(SEARCH_URL, youveGotQuotes);
+const quoteGenerator = (callback) => $.getJSON(SEARCH_URL, callback);
 
-function youveGotQuotes(response) {
+const youveGotQuotes = (response) => {
 	quote = response.quote;
 	author = response.author;
 	renderQuoteLanding(quote, author);
@@ -93,29 +91,29 @@ function youveGotQuotes(response) {
 
 //Event Handlers
 
-$('#about-my-skills').click(function(event){
+$('#about-my-skills').click(event => {
                 event.preventDefault();
                 renderTechStack();
 });
 
-$('#about-me').click(function(event){
+$('#about-me').click(event => {
                 event.preventDefault();
                 renderAboutMe();
 });
 
-$('#quiz-app').click(function(event){
+$('#quiz-app').click(event => {
                 event.preventDefault();
                 renderProject(state, 0);
 });
 
-$('#weather-challenge').click(function(event){
+$('#weather-challenge').click(event => {
                 event.preventDefault();
                 renderProject(state, 1);
 });
 
-$('#bootcamp-bit').click(function(event){
+$('#bootcamp-bit').click(event => {
                 event.preventDefault();
                 renderProject(state, 2);
 });
 
-$(document).ready(quoteGenerator());
+$(document).ready(quoteGenerator(youveGotQuotes));
