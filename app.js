@@ -27,7 +27,7 @@ const state = {
 		projectStack: ["MongoDB", "Express", `Node.js`, `React/Redux`, "HTML", "CSS", "JavaScript", "JSX"],
 		projectScreenShot: "",
 		projectCodeLink: "https://github.com/gatorisgreater/project-portfolio",
-		projectDemoLink: "https://bootcamp-bit.herokuapp.com/",
+		projectDemoLink: "https://project-portfolio.herokuapp.com/",
 		projectImprovements: "Refactoring to ES6 syntax"
 	},
 	],
@@ -111,7 +111,7 @@ $('#weather-challenge').click(event => {
                 renderProject(state, 1);
 });
 
-$('#bootcamp-bit').click(event => {
+$('#project-portfolio').click(event => {
                 event.preventDefault();
                 renderProject(state, 2);
 });
