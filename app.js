@@ -22,11 +22,11 @@ const state = {
 		projectImprovements: "Refactoring to ES6 syntax"
 	},
 	{
-		projectTitle: "Repo Tracker",
-		projectDescription: "User can track projects and details. This information is stored in a database for future recall.",
+		projectTitle: "Project Portfolio",
+		projectDescription: "User tracks portfolio projects and tech/UI details. This information is stored in a database for future recall.",
 		projectStack: ["MongoDB", "Express", `Node.js`, `React/Redux`, "HTML", "CSS", "JavaScript", "JSX"],
 		projectScreenShot: "",
-		projectCodeLink: "https://github.com/GatorisGreater/bootcamp-bit",
+		projectCodeLink: "https://github.com/gatorisgreater/project-portfolio",
 		projectDemoLink: "https://bootcamp-bit.herokuapp.com/",
 		projectImprovements: "Refactoring to ES6 syntax"
 	},

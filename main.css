@@ -1,10 +1,21 @@
+/*html { 
+  background: url(http://cdn.wonderfulengineering.com/wp-content/uploads/2014/07/black-and-white-wallpaper-14.jpg) 
+  no-repeat center center fixed; 
+  background: url(https://www.colourbox.com/preview/5716499-sketch-of-light-bulb-on-white-background.jpg); 
+  no-repeat center center fixed; 
+  background-size: cover;
+}*/
+
 html {
 	font-family: "Lucida Console", Monaco, monospace;
 }
 
+.skills, .name {
+  font-size: 20px;
+}
+
 html, body {
   margin: 15px;
-  height: 100%;
 }
 
 p.left-nav {
