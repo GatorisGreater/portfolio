@@ -1,14 +1,33 @@
-/*html { 
-  background: url(http://cdn.wonderfulengineering.com/wp-content/uploads/2014/07/black-and-white-wallpaper-14.jpg) 
-  no-repeat center center fixed; 
-  background: url(https://www.colourbox.com/preview/5716499-sketch-of-light-bulb-on-white-background.jpg); 
-  no-repeat center center fixed; 
-  background-size: cover;
-}*/
+html { 
+/*    background: url(http://kingofwallpapers.com/developer/developer-003.jpg); 
+/*  background: url(http://www.my-wall-decal.com/img/atlanta_georgia_wall_decal_s.jpg) 
+/*  background: url(http://i3.cpcache.com/product/554201945/atlanta_skyline_laptop_skins.jpg)  */     
+  background: url(http://www.condrengalleries.com/Skylines/Atlanta/Drawings/819/Reduced/975.jpg) 
+/*  background: url(https://i.ytimg.com/vi/O0HTuuR0eCg/maxresdefault.jpg)*/
+/*    background: url(https://cdn.shutterstock.com/shutterstock/videos/3994903/thumb/1.jpg)*/
+/*        background: url(http://www.my-wall-decal.com/img/atlanta_georgia_wall_decal_h.jpg)*/
+/*                background: url(http://images.fineartamerica.com/images/artworkimages/mediumlarge/1/atlanta-georgia-vector-doug-larue.jpg)*/
+/*      background: url(http://farm1.static.flickr.com/158/369042183_c9654404f6.jpg)*/
+/*background: url(https://s-media-cache-ak0.pinimg.com/736x/2e/6a/4d/2e6a4d7e113ae111167def72ca3cec3b.jpg)*/
+/*background: url(https://www.historians.org/Images/Perspectives/September%202015/09a_AM%20Photo%201.Postcard.jpg)*/
+/*  background: url(http://www.jaymontgomery.com/wp-content/uploads/2015/01/WelcomeAtlanta_1000px.jpg)*/
+
+  no-repeat center bottom fixed;
+  background-size: 60%;
+
+}
 
 html {
 	font-family: "Lucida Console", Monaco, monospace;
+  color: #333333;
 }
+
+/*section {
+  height: 500px;
+  background: url(http://www.my-wall-decal.com/img/atlanta_georgia_wall_decal_h.jpg)
+  no-repeat center bottom;
+  background-size: 75%;
+}*/
 
 .skills, .name {
   font-size: 20px;
@@ -18,11 +37,11 @@ html, body {
   margin: 15px;
 }
 
-p.left-nav {
+nav.left-nav {
   float: left;
 }
 
-p.right-nav {
+nav.right-nav {
   float: right;
 }
 
