@@ -12,6 +12,7 @@ html {
 /*background: url(https://www.historians.org/Images/Perspectives/September%202015/09a_AM%20Photo%201.Postcard.jpg)*/
 /*  background: url(http://www.jaymontgomery.com/wp-content/uploads/2015/01/WelcomeAtlanta_1000px.jpg)*/
 
+  /*background: url(https://d3ui957tjb5bqd.cloudfront.net/images/screenshots/products/60/601/601792/atlanta_001_cm-f.jpg) */
   no-repeat center bottom fixed;
   background-size: 60%;
 
@@ -71,6 +72,15 @@ p.skills:hover {
 header img {
 	width: 50px;
 	height: 100%;
+}
+
+.body-screenshot {
+  border-width: 10px;
+  border-color: #333333;
+}
+
+.body-details {
+  background-color: #DCDCDC;
 }
 
 .landing {
