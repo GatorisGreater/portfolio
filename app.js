@@ -8,7 +8,7 @@ let author;
 
 	const renderQuoteLanding = () => {
 	$('.quote').html(quote);
-	$('.author').html(author);
+	$('.author').html("- " + author);
 	}
 
 //AJAX Logic
