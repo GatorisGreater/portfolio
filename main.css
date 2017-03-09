@@ -1,92 +1,85 @@
-html { 
-/*    background: url(http://kingofwallpapers.com/developer/developer-003.jpg); 
-/*  background: url(http://www.my-wall-decal.com/img/atlanta_georgia_wall_decal_s.jpg) 
-/*  background: url(http://i3.cpcache.com/product/554201945/atlanta_skyline_laptop_skins.jpg)  */     
-  background: url(http://www.condrengalleries.com/Skylines/Atlanta/Drawings/819/Reduced/975.jpg) 
-/*  background: url(https://i.ytimg.com/vi/O0HTuuR0eCg/maxresdefault.jpg)*/
-/*    background: url(https://cdn.shutterstock.com/shutterstock/videos/3994903/thumb/1.jpg)*/
-/*        background: url(http://www.my-wall-decal.com/img/atlanta_georgia_wall_decal_h.jpg)*/
-/*                background: url(http://images.fineartamerica.com/images/artworkimages/mediumlarge/1/atlanta-georgia-vector-doug-larue.jpg)*/
-/*      background: url(http://farm1.static.flickr.com/158/369042183_c9654404f6.jpg)*/
-/*background: url(https://s-media-cache-ak0.pinimg.com/736x/2e/6a/4d/2e6a4d7e113ae111167def72ca3cec3b.jpg)*/
-/*background: url(https://www.historians.org/Images/Perspectives/September%202015/09a_AM%20Photo%201.Postcard.jpg)*/
-/*  background: url(http://www.jaymontgomery.com/wp-content/uploads/2015/01/WelcomeAtlanta_1000px.jpg)*/
-
-  /*background: url(https://d3ui957tjb5bqd.cloudfront.net/images/screenshots/products/60/601/601792/atlanta_001_cm-f.jpg) */
-  no-repeat center bottom fixed;
-  background-size: 60%;
-
-}
-
 html {
-	font-family: "Lucida Console", Monaco, monospace;
-  color: #333333;
-}
-
-/*section {
-  height: 500px;
-  background: url(http://www.my-wall-decal.com/img/atlanta_georgia_wall_decal_h.jpg)
-  no-repeat center bottom;
-  background-size: 75%;
-}*/
-
-.skills, .name {
-  font-size: 20px;
-}
-
-html, body {
-  margin: 15px;
-}
-
-nav.left-nav {
-  float: left;
-}
-
-nav.right-nav {
-  float: right;
-}
-
-.hidden {
-	display: none;
-}
-
-.intro img:hover {
-    background-color: gray; 
-    border-radius: 8px;
-}
-
-.intro p {
-    display: inline; 
-}
-
-p.name:hover {
-    background-color: gray; 
-    border-radius: 8px;
-}
-
-p.skills:hover {
-    background-color: gray; 
-    border-radius: 8px;
-}
-
-header img {
-	width: 50px;
-	height: 100%;
-}
-
-.body-screenshot {
-  border-width: 10px;
-  border-color: #333333;
-}
-
-.body-details {
-  background-color: #DCDCDC;
+  font-family: 'Ubuntu Mono', monospace;
+/*  color: #333333;*/
+cursor: pointer;
 }
 
 .landing {
-	text-align: center;
+  text-align: center;
 }
 
-.landing ul {
-  list-style-type: none;
+header, .main {
+  text-align: center;
 }
+
+img {
+  width: 75%;
+  border-radius: 25%;
+}
+
+img.screenshot {
+  border-color: #333333;
+  border-style: solid;
+}
+a.code, a.demo {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+  #top{
+    background-color: #ffffff;
+    color: #333333;
+  }
+
+  #about-me { 
+    background-color: #333333;
+    color: #ffffff;
+  }
+
+a.light-link {
+    font-weight: bold;
+    background-color: #ffffff;
+    color: #333333;
+    box-shadow: -5px 0 0 #ffffff, 5px 0 0 #ffffff;
+    border-radius: 3px;
+    width: 50%;
+    text-decoration: none;
+}
+
+
+button {
+  display: inline;
+  background-color: #333333;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 3px;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 10px;
+}
+
+button.see-portfolio {
+  display: inline;
+  background-color: #ffffff;
+  color: #333333;
+  padding: 10px;
+  border-radius: 3px;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 10px;
+}
+
+/*.icons {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -100; }
+
+.stamp {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+  margin-left: -10px;
+  background: yellow;
+  border-radius: 100px; }*/
