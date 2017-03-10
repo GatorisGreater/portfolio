@@ -28,13 +28,16 @@ const youveGotQuotes = (response) => {
 		// 	$('.icons').append('<div class="stamp" style="top:' + e.pageY + 'px; left:' + e.pageX + 'px;"></div>');
 		// });
 
-// $('#loader-overlay').show();
+
+
+
+$('#loader-overlay').show();
 $(document).ready(function(){
 
 	$(window).on('load resize', function(e){
 		$('#top').css('height', $(window).height() * .995);
 		$('#about-me').css('height', $(window).height() * .995);
-		// $('#loader-overlay').delay(400).fadeOut(300);
+		$('#loader-overlay').delay(1000).fadeOut(300);
 	})
 
 	$('#learn-more').click(function(){
