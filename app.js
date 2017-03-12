@@ -23,10 +23,11 @@ const youveGotQuotes = (response) => {
 
 //Event Handlers
 
-$('#loader-overlay').show();
+// $('#loader-overlay').show();
 $(document).ready(function(){
 
 	$(window).on('load resize', function(e){
+		$('#loader-overlay').show();
 		$('#loader-overlay').delay(1000).fadeOut(300);
 		$('#top').css('height', $(window).height() * .995);
 		$('#about-me').css('height', $(window).height() * .995);
@@ -54,5 +55,7 @@ $(document).ready(function(){
 
 	});
 
-	quoteGenerator(youveGotQuotes);	
+	// quoteGenerator(youveGotQuotes);	
 })
+
+$(document).ready(quoteGenerator(youveGotQuotes));	
