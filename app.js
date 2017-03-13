@@ -1,7 +1,9 @@
 let quote;
 let author;
 
-const quotes = 
+// State Object
+
+const state = 
 	[
   {
     author: "Robert Sewell",
@@ -105,22 +107,21 @@ const quotes =
   }
 ]
 
-//Render Functions
+// State Manipulation Function
+
+const quoteGenerator = (quoteObject) => {
+	let index = Math.floor(Math.random() * quoteObject.length);
+	quote = quoteObject[index].quote;
+	author = quoteObject[index].author;
+	renderQuoteLanding(quote, author);
+}
+
+//Render Function
 
 	const renderQuoteLanding = () => {
 	$('.quote').html(quote);
 	$('.author').html("- " + author);
 	}
-
-// State Manipulation Function
-
-const quoteGenerator = (quoteObject) => {
-	let index = Math.floor(Math.random() * quoteObject.length);
-	console.log(index);
-	quote = quoteObject[index].quote;
-	author = quoteObject[index].author;
-	renderQuoteLanding(quote, author);
-}
 
 //Event Handlers
 
@@ -158,4 +159,4 @@ $(document).ready(function(){
 
 })
 
-$(document).ready(quoteGenerator(quotes));	
+$(document).ready(quoteGenerator(state));	
