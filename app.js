@@ -150,6 +150,14 @@ $(document).ready(function(){
 
 	});
 
+	// function scrollAnimation(elementId) {
+	// 	$('html, body').animate({
+	// 		scrollTop: $(`"#${elementId}"`).offset().top
+	// 	}, 450);		
+	// }
+
+	// $('#back-to-top').click(scrollAnimation(top));	
+	
 	$('#back-to-top').click(function(){
 		$('html, body').animate({
 			scrollTop: $("#top").offset().top
