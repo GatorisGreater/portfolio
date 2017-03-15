@@ -69,7 +69,7 @@ button.see-portfolio {
   margin: 10px;
 }
 
-/*.icons {
+.icons {
   position: absolute;
   top: 0;
   left: 0;
@@ -82,4 +82,4 @@ button.see-portfolio {
   margin-top: -10px;
   margin-left: -10px;
   background: yellow;
-  border-radius: 100px; }*/
+  border-radius: 100px; }

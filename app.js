@@ -165,6 +165,20 @@ $(document).ready(function(){
 
 	});
 
+	$('#to-about-me').click(function(){
+		$('html, body').animate({
+			scrollTop: $("#about-me").offset().top
+		}, 450);
+
+	});
+
+	$('#to-projects').click(function(){
+		$('html, body').animate({
+			scrollTop: $("#project-1").offset().top
+		}, 450);
+
+	});
+
 })
 
 $(document).ready(quoteGenerator(state));	
