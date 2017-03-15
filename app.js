@@ -30,10 +30,6 @@ const state =
     quote: "QA Engineer walks into a bar. Orders a beer. Orders 0 beers. Orders 999999999 beers. Orders a lizard. Orders -1 beers. Orders a sfdeljknesv."
   },
   {
-    author: "Jeremy S. Anderson",
-    quote: "There are two major products that come out of Berkeley: LSD and UNIX.  We don’t believe this to be a coincidence."
-  },
-  {
     author: "Ovidiu Platon",
     quote: "I don’t care if it works on your machine! We are not shipping your machine!"
   },
@@ -125,18 +121,9 @@ const quoteGenerator = (quoteObject) => {
 
 //Event Handlers
 
-// $('#loader-overlay').show();
-$(document).ready(function(){
-
-	$(window).on('load resize', function(e){
-		$('#loader-overlay').show();
-		$('#loader-overlay').delay(1000).fadeOut(300);
-		$('#top').css('height', $(window).height() * .995);
-		$('#about-me').css('height', $(window).height() * .995);
-
-	})
-
-	$('#learn-more').click(function(){
+document.addEventListener("DOMContentLoaded", function() {
+	$('#about-me, #top').css('height', $(window).height() * .995);
+		$('#learn-more').click(function(){
 		$('html, body').animate({
 			scrollTop: $("#about-me").offset().top
 		}, 450);
@@ -179,6 +166,6 @@ $(document).ready(function(){
 
 	});
 
-})
+});
 
 $(document).ready(quoteGenerator(state));	
